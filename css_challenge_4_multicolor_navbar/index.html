@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Bar</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=android"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 24;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+
+      :root {
+        --dark_color: rgb(0, 0, 0);
+        --light_color: rgb(255, 255, 255);
+        --card_view_dark: 0 4px 8px rgba(150, 150, 150, 0.25);
+        --card_view_light: 0 4px 8px rgba(135, 132, 132, 0.25);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: var(--light_color);
+      }
+      .nav-bar-elements {
+        display: flex;
+        list-style: none;
+      }
+      .nav-bar-elements > li {
+        margin: 5px 2rem;
+        padding: 5px 5px;
+      }
+
+      .barriecito-regular {
+        font-family: "Barriecito", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .nav-bar-elements > li:first-child {
+        margin-right: 10rem;
+        display: flex;
+        font-size: 20px;
+      }
+      .nav-bar {
+        padding: 20px;
+        margin: 0px 20px;
+        background-color: var(--light_color);
+        color: var(--dark_color);
+        box-shadow: var(--card_view_dark);
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo"></div>
+      <ul class="nav-bar-elements">
+        <li>
+          <span class="material-symbols-outlined"> android </span>
+          &nbsp;
+          <p class="barriecito-regular">VOID</p>
+        </li>
+        <li>Home</li>
+        <li>Products</li>
+        <li>Pricing</li>
+        <li>Contacts</li>
+        <li>FAQs</li>
+        <li>About</li>
+      </ul>
+    </nav>
+  </body>
+</html>

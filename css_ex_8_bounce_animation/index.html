@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        background-color: blueviolet;
+        position: relative;
+        height: 80vh;
+        width: 80vw;
+      }
+      .ball {
+        background-color: brown;
+        height: 10vh;
+        width: 5vw;
+        position: absolute;
+        border-radius: 50%;
+        bottom: 0;
+        left: 0;
+        /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+        /*animation: moveX 3s linear infinite;*/
+        animation: moveY 1s ease-out infinite alternate,
+          moveX 5s linear infinite;
+        animation-fill-mode: ;
+      }
+
+      @keyframes moveX {
+        from {
+          left: 0;
+        }
+        to {
+          left: 85%;
+        }
+      }
+
+      @keyframes moveY {
+        from {
+          bottom: 0;
+        }
+        to {
+          bottom: 85%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
+}
+
+header nav ul {
+    list-style: none;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.logo {
+    display: flex;
+    align-self: center;
+}
+
+.logo img {
+    max-height: 58%;
+    width: 180px;
+    height: 85px;
+    margin-top: 20px;
+}
+
+.nav-elements {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.nav-elements>li>a {
+    padding: 1vw;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 5px;
+}
+
+.extras {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+    margin-top: 15px;
+}
+
+.download {
+    text-decoration: none;
+    background-color: #00b6d1;
+    font-size: 18px;
+    color: white;
+    padding: 15px 25px;
+    margin: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+h3, .head-sub-content {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5vh 200px;
+    padding: 5vh 5vh;
+    gap: 15px;
+}
+
+.main-content img {
+    height: 32px;
+    width: 112px;
+}
+.head-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.third-section {
+    max-width: 70vw;
+    margin: 40px auto;
+}
+
+.third-section img{
+    width: 70px;
+}
+
+small {
+    font-size: 14px;
+}
+
+.download-exe a {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.language{
+    margin-top: 10px;
+    margin-bottom: 32px;
+}
+
+.content-data {
+    margin: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+}
+
+.sha-hashing {
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.country{
+    padding-bottom: 15px;
+}
+
+.sha-hashing p {
+    font-size: 10px;
+    word-wrap: break-word;
+    width: 50ch;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width:1100px){
+    .third-section {
+        max-width: max-content;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
