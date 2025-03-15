@@ -1,15 +1,11 @@
-let n = 5;
-let arr = [];
+let n = 6;
 
-for(let i=1; i<=n ; i++){
-    arr.push(i);
+function generate_fact(num){
+    let arr = (Array.from(Array(num+1).keys())).slice(1,);
+    return arr.reduce((a,b)=> a*b);
 }
 
-let factorial = arr.reduce((a,b)=>{
-    return a*b;
-});
-
-console.log(factorial);
+console.log(generate_fact(n));
 
 let fact = (num) =>{
     let prod = 1;
